@@ -5,14 +5,6 @@
 	
 	<!-- DAO 생성자 인젝션 방식 객체 생성 -->
 	
-	<bean id="bookDao" class="com.ticket.book.BookDAO">
-		<constructor-arg ref="sqlSession"/>
-	</bean>
-	
-	<bean id="roundDao" class="com.ticket.round.RoundDAO">
-		<constructor-arg ref="sqlSession"/>
-	</bean>
-	
 	<bean id="memberDao" class="com.ticket.member.MemberDAO">
 		<constructor-arg ref="sqlSession"/>
 	</bean>
@@ -34,10 +26,6 @@
 	</bean>		
 	
 	<bean id="seatRateDao" class="com.ticket.seatrate.SeatRateDAO">
-		<constructor-arg ref="sqlSession"/>
-	</bean>
-	
-	<bean id="actorDao" class="com.ticket.actor.ActorDAO">
 		<constructor-arg ref="sqlSession"/>
 	</bean>
 	

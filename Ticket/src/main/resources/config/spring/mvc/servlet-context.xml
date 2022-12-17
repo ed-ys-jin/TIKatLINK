@@ -44,12 +44,6 @@
 		<beans:constructor-arg ref="productService" />
 	</beans:bean>
 
-	<beans:bean class="com.ticket.book.BookController">
-		<beans:constructor-arg ref="bookService" />
-		<beans:constructor-arg ref="roundService" />
-		<beans:constructor-arg ref="actorService" />
-	</beans:bean>
-
 	<beans:bean class="com.ticket.product.ProductController">	
 		<beans:constructor-arg ref="productService"/>
 		<beans:constructor-arg ref="seatRateService"/>  	<!-- 좌석등급 -->

@@ -5,14 +5,6 @@
 	
 	<!-- Service 생성자 인젝션 방식 객체 생성 -->
 	
-	<bean id="bookService" class="com.ticket.book.BookService">
-		<constructor-arg ref="bookDao"/>
-	</bean>
-	
-	<bean id="roundService" class="com.ticket.round.RoundService">
-		<constructor-arg ref="roundDao"/>
-	</bean>
-	
 	<bean id="memberService" class="com.ticket.member.MemberService">
 		<constructor-arg ref="memberDao"/>
 	</bean>
@@ -35,10 +27,6 @@
 	
 	<bean id="seatRateService" class="com.ticket.seatrate.SeatRateService">  
 		<constructor-arg ref="seatRateDao"/>
-	</bean>
-	
-	<bean id="actorService" class="com.ticket.actor.ActorService">  
-		<constructor-arg ref="actorDao"/>
 	</bean>
 	
 	<bean id="adminService" class="com.ticket.admin.AdminService">  
